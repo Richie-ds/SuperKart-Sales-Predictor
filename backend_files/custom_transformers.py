@@ -15,4 +15,4 @@ def classify_product_type_category(X):
         'Fruits and Vegetables', 'Dairy', 'Meat', 'Breads',
         'Seafood', 'Breakfast', 'Starchy Foods', 'Frozen Foods'
     ]
-    return X.iloc[:, 0].astype(str).apply(lambda x: 'Perishable' if x in perishable_types else 'Non Perishable').values.reshape(-1, 1)
+    return X.iloc[:, 0].astype(str).apply(lambda x: 'Perishables' if x in perishable_types else 'Non Perishables').values.reshape(-1, 1)
